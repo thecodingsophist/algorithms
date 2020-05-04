@@ -34,3 +34,19 @@ if __name__ == "__main__":
 # also can be done using the map() function
 
     x, y = map(int, input().split())
+
+'''
+    For-In Range (WEEK 1)
+'''
+# See: https://www.w3schools.com/python/ref_func_range.asp
+
+x = range(1,6)
+for i in x:
+    print x
+
+# this should print: 1,2,3,4,5
+
+'''
+    os.system --> command (WEEK 1)
+'''
+# def : executes the command (a string in a subshell)
