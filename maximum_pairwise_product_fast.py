@@ -8,11 +8,21 @@ for i in x:
     # print('a[i]: ' + str(a[i]))
     if a[i] > a[index]:
         index = i
-k = 0
-for i in x:
-    if a[i] != a[index] and a[i] > a[k]:
-        k = i
-print(a[index]*a[k])
+    # print("a[index] = " + str(a[index]))
+if index == 0:
+    k = 1
+    for i in range(2, n):
+        if i != index and a[i] > a[k]:
+            k = i
+        # print("a[k] = " + str(a[k]))
+    print(a[index]*a[k])
+else:
+    k = 0
+    for i in x:
+        if i != index and a[i] > a[k]:
+            k = i
+        # print("a[k] = " + str(a[k]))
+    print(a[index]*a[k])
 
 ''' DEBUGGING NOTES: '''
 
